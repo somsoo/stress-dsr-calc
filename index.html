@@ -40,6 +40,61 @@
         button, [role="button"], a.btn { min-height: 44px; }
       }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://stress-dsr.enjoy-onepage.com/#webapp",
+          "name": "2026 스트레스 DSR 3단계 대출 한도 & 정책대출 비교기",
+          "url": "https://stress-dsr.enjoy-onepage.com/",
+          "applicationCategory": "UtilityApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "기본 1.50% 스트레스 금리 적용 시 변동·혼합·주기형 한도 격차와 신생아 특례 대출의 이자 절감 효과를 분석합니다.",
+          "image": "https://stress-dsr.enjoy-onepage.com/og-image.png",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://stress-dsr.enjoy-onepage.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "스트레스 DSR 3단계 가산금리는 상품별로 어떻게 다른가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "기본 스트레스 금리 1.50% 기준 순수 변동형은 100%(+1.50%p), 5년 고정 혼합형은 80%(+1.20%p), 5년 변동 주기형은 40%(+0.60%p)가 가산되며 순수 고정형은 가산이 없습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "신생아 특례대출은 왜 DSR 규제를 받지 않나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "국토교통부와 주택도시기금 정책 금융 상품으로 출산 가구 주거 안정을 위해 은행권 스트레스 DSR에서 전면 배제되며 DTI 60%만 적용됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "주기형 대출을 선택하면 대출 한도가 얼마나 늘어나나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "스트레스 가산금리가 0.60%p만 적용되므로 순수 변동형(+1.50%p) 대비 동일 연봉 기준 수천만 원에서 최대 1억 원 이상의 추가 한도를 확보할 수 있습니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased font-sans min-h-screen flex flex-col justify-between">
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
@@ -240,15 +295,45 @@
         </section>
     </main>
 
+    <!-- 🔗 딥리서치 토픽 클러스터: 관련 전문 블로그 가이드 역링크 -->
+    <section class="max-w-5xl mx-auto my-6 px-4">
+      <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl border border-blue-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl flex-shrink-0">📜</span>
+          <div class="text-left">
+            <div class="text-[11px] font-bold text-blue-600 uppercase tracking-wider">공식 심층 리포트 연계</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">2026 청약·연말정산 세대분리 단독세대주 조건 및 주택담보대출 기준 총정리</div>
+          </div>
+        </div>
+        <a href="https://finance-kr.enjoy-onepage.com/2026/09/18/single-household-head-requirements/" target="_blank" rel="noopener noreferrer" class="shrink-0 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition shadow-sm hover:shadow flex items-center gap-1.5">
+          <span>전문 분석 보기</span>
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+
+
     <!-- Bottom Large Ad Banner -->
     <div class="manual-ad-box ad-bottom-banner" style="width: 100%; max-width: 960px; margin: 24px auto 16px; text-align: center;">
         <ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block;"></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
-        <p>© 2026 스트레스 DSR 3단계 시뮬레이터. 은행업 감독규정 및 주택도시기금 고시 준용.</p>
+    
+    <footer class="bg-white border-t border-slate-200 py-8 px-4 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto space-y-3">
+            <div class="flex flex-wrap justify-center gap-4 text-xs font-medium text-slate-600">
+                <a class="hover:text-indigo-600 transition-colors" href="/about.html">서비스 소개 및 법정 산정식</a>
+                <span>·</span>
+                <a class="hover:text-indigo-600 transition-colors" href="/privacy.html">개인정보처리방침</a>
+                <span>·</span>
+                <a class="hover:text-indigo-600 transition-colors" href="/terms.html">서비스 이용약관</a>
+            </div>
+            <p>본 계산기는 관계 법령 및 공인 고시를 기준으로 작성된 모의 시뮬레이터이며 실제 행정 심사 결과와 상이할 수 있습니다.</p>
+            <p class="text-[11px] text-slate-400">© 2026 2026 스트레스 DSR 3단계 대출 한도 & 정책대출 비교기. All rights reserved.</p>
+        </div>
     </footer>
+
 
     <script>
         function parseNum(val) {
